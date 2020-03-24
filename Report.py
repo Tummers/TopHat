@@ -26,6 +26,6 @@ def main():
 
     a = Course(infile, report_file, participation_points=True)
 
-    a.missed_score_correlation()
+    a.report()
     
 main()
