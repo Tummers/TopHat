@@ -1,6 +1,6 @@
-Instructions for operating the Course.py script
+Instructions for operating the scripts in this repository.
 
-This script works using an exported file from TopHats website.
+These scripts work using an exported file from TopHats website.
 
 To export:
 
@@ -15,11 +15,11 @@ The excel spreadsheet must be in the following format:
 Row 3 should contain the titles of the questions asked.
 (It will also contain several entries marked "Weight")
 
-Row 2 should contain the lectures for which the questions were used,
+Row 2 should contain the lectures in which the questions were used,
 the lecture should only be identified above the first question in the 
 lecture. E.g. if the first question in the third lecture was entitled,
 "Books", the cell above "Books" should say "Lecture 3", but no other 
-question in lecture 3 should be flagged. The lecture identifying cells
+question in lecture 3 should be marked this way. The lecture identifying cells
 must contain the word "Lecture" or "lecture".
 
 The questions should begin in column G. This should be done 
@@ -32,8 +32,12 @@ If no response was given to the question, it should appear as "--".
 
 Using the script:
 
-The command line for the script should be as follows:
+The command line for performing classical test theory statistics should be as follows:
 
-python Course.py <title of excel file> <title of file to write report to>
+python Report.py <title of excel file> <title of file to write report to>
 
-Note that neither of the files need their suffix explicitly stated.
+For PCA.py the format of input should be the same. The command line should be:
+
+python PCA.py <title of excel file> <title of file to write report to>
+
+Note that the files given in the command lines do NOT need their suffix explicitly stated.
