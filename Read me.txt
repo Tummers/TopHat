@@ -1,0 +1,39 @@
+Instructions for operating the Course.py script
+
+This script works using an exported file from TopHats website.
+
+To export:
+
+Open TopHats website on your browser.
+Go to the "Gradebook" for the desired course.
+Click the "Open Folders" button.
+Click Export.
+Save as a .xlsx file in the same folder as the Course.py script.
+
+The excel spreadsheet must be in the following format:
+
+Row 3 should contain the titles of the questions asked.
+(It will also contain several entries marked "Weight")
+
+Row 2 should contain the lectures for which the questions were used,
+the lecture should only be identified above the first question in the 
+lecture. E.g. if the first question in the third lecture was entitled,
+"Books", the cell above "Books" should say "Lecture 3", but no other 
+question in lecture 3 should be flagged. The lecture identifying cells
+must contain the word "Lecture" or "lecture".
+
+The questions should begin in column G. This should be done 
+automatically when exporting from TopHat.
+
+Where a student answered a question correctly, it should be marked
+"1".
+Where a student answered incorrectly, it should be marked "0".
+If no response was given to the question, it should appear as "--".
+
+Using the script:
+
+The command line for the script should be as follows:
+
+python Course.py <title of excel file> <title of file to write report to>
+
+Note that neither of the files need their suffix explicitly stated.
